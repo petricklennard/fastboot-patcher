@@ -23,7 +23,7 @@ jobs:
          
     - name: Download recovery image from URL
       run: |
-         wget ${{github.event.inputs.image_url}}
+         wget -O recovery.img ${{github.event.inputs.image_url}}
 
     - name: Start patching script
       run: |
